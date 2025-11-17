@@ -1,12 +1,7 @@
 <!DOCTYPE html>
-<!--
-	Telephasic by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html><head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-		<title>Maria Zarbl Psychotherapeutin</title>
+		<title>Maria Zarbl Psychotherapie</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 		<link rel="stylesheet" href="index_files/main.css">
@@ -19,7 +14,7 @@
 					<div id="header" class="container">
 
 						<!-- Logo -->
-							<h1 id="logo"><a href="http://192.168.1.2:5500/index.html">Maria Zarbl</a></h1>
+							<h1 id="logo"><a href="index.html">Maria Zarbl</a></h1>
 
 						<!-- Nav -->
 							<nav id="nav">				
@@ -28,13 +23,13 @@
 										<a href="ueber-mich.html">Über Mich</a>				
 									</li>
 									<li style="white-space: nowrap;">
-										<a href="http://192.168.1.2:5500/psychotherapie.html">Die Therapie</a>
+										<a href="psychotherapie.html">Die Therapie</a>
 									</li>
 									<li class="break" style="white-space: nowrap;">
-										<a href="http://192.168.1.2:5500/fragen.html">Häufige Fragen</a>
+										<a href="fragen.html">Häufige Fragen</a>
 									</li>
 									<li style="white-space: nowrap;">
-										<a href="kontakt.html">Kontakt</a>
+										<a href="anfahrt.html">Anfahrt</a>
 									</li>
 								</ul>
 							</nav>
@@ -80,8 +75,8 @@
 			<!-- Promo -->
 				<div id="promo-wrapper">
 					<section id="promo">
-						<h2>Erfahre mehr zu meiner Person</h2>
-						<a href="192.168.1.2:5500/ueber-mich" class="button">Über Mich</a>
+						<h2>Erfahren Sie mehr über</h2>
+						<a href="/psychotherapie" class="button">Die Therapie</a>
 					</section>
 				</div>
 
@@ -119,14 +114,14 @@
 					<div id="footer" class="container">
 						<header class="major">
 							<h2>Kontakt aufnehmen</h2>
-							<p>Sie möchten einen Termin vereinbaren oder haben eine Frage?<br>
-								Schreiben Sie mir oder rufen Sie mich direkt an!<br>
-								Ich freue mich von Ihnen zu hören.
-							</p>
 						</header>
 						<div class="row">
 							<section class="col-8 off-2">
-								<form method="post" action="#">
+								Ich freue mich von Ihnen zu hören und begleite Sie gerne ein Stück auf Ihrem Weg.
+								<p>Wenn Sie Fragen haben oder einen Termin vereinbaren möchten,
+								melden Sie sich gerne bei mir.<br>
+							</p>
+								<form method="POST" action="https://formspree.io/f/xeovyjba">
 									<div class="row gtr-50">
 										<div class="col-6 col-12-mobile">
 											<input name="name" placeholder="Name" type="text">
@@ -150,7 +145,7 @@
 					</div>
 					<div id="copyright" class="container">
 						<ul class="menu">
-							<li>© Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net/">HTML5 UP</a></li>
+							<li>© Maria Zarbl. All rights reserved.</li><li>Design based on: <a href="http://html5up.net/">HTML5 UP</a></li>
 						</ul>
 					</div>
 				</div>
@@ -164,44 +159,5 @@
 			<script src="index_files/breakpoints.min.js"></script>
 			<script src="index_files/util.js"></script>
 			<script src="index_files/main.js"></script><div id="navButton"><a href="#navPanel" class="toggle"></a></div><div id="navPanel"><nav><a href="http://192.168.1.41:5500/index.html" class="link depth-0">Home</a><a class="link depth-0" href="#"><span class="indent-0"></span>Über Mich</a><a class="link depth-0" href="http://192.168.1.41:5500/left-sidebar.html"><span class="indent-0"></span>Die Therapie</a><a class="link depth-0" href="http://192.168.1.41:5500/right-sidebar.html"><span class="indent-0"></span>Häufige Fragen</a><a class="link depth-0" href="http://192.168.1.41:5500/no-sidebar.html"><span class="indent-0"></span>Kontakt</a></nav></div>
-
-	<!-- Code injected by live-server -->
-<script>
-	// <![CDATA[  <-- For SVG support
-	if ('WebSocket' in window) {
-		(function () {
-			function refreshCSS() {
-				var sheets = [].slice.call(document.getElementsByTagName("link"));
-				var head = document.getElementsByTagName("head")[0];
-				for (var i = 0; i < sheets.length; ++i) {
-					var elem = sheets[i];
-					var parent = elem.parentElement || head;
-					parent.removeChild(elem);
-					var rel = elem.rel;
-					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
-						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
-						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
-					}
-					parent.appendChild(elem);
-				}
-			}
-			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
-			var address = protocol + window.location.host + window.location.pathname + '/ws';
-			var socket = new WebSocket(address);
-			socket.onmessage = function (msg) {
-				if (msg.data == 'reload') window.location.reload();
-				else if (msg.data == 'refreshcss') refreshCSS();
-			};
-			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
-				console.log('Live reload enabled.');
-				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
-			}
-		})();
-	}
-	else {
-		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
-	}
-	// ]]>
-</script>
 
 </body></html>
