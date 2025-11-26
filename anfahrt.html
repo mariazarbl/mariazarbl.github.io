@@ -53,7 +53,6 @@
 						<div class="row features">
 							<section class="col-8 col-12-narrower feature" style="height: 200%;">
 								<div class="image-wrapper">
-
 									<div class="mapouter image featured"><div class="osm_canvas">
 									<iframe width="100%" height="400px" id="osm_canvas"  src="about:blank" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
 									<script>document.getElementById('osm_canvas').contentDocument.write('<link rel = "stylesheet" href = "https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.min.css" />');document.getElementById('osm_canvas').contentDocument.write('<script src = "https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.min.js"><\/script>');
@@ -105,9 +104,11 @@
 											<textarea name="message" placeholder="Anfrage"></textarea>
 										</div>
 										<div class="col-12">
+										    <input name="einwilligung" type="checkbox" required>
+											<small>Ich stimme der Übermittlung und Verarbeitung meiner Nachricht zu. Mir ist bekannt, dass ich meine Einwilligung jederzeit widerrufen kann. Die Zustimmung ist erforderlich.
+											</small>
 											<ul class="actions">
-												<li><input type="submit" value="Anfrage Senden"></li>
-												<li><input type="reset" value="Zurücksetzen"></li>
+												<input type="submit" value="Anfrage Senden">
 											</ul>
 										</div>
 									</div>
@@ -117,7 +118,10 @@
 					</div>
 					<div id="copyright" class="container">
 						<ul class="menu">
-							<li>© Maria Zarbl. All rights reserved.</li><li>Design based on: <a href="http://html5up.net/">HTML5 UP</a></li>
+							<li>© Maria Zarbl. All rights reserved.</li>
+							<li><a href="/datenschutz.html">Datenschutz</a></li>
+							<li><a href="/impressum.html">Impressum</a></li>
+							<li>Design based on: <a href="http://html5up.net/">HTML5 UP</a></li>
 						</ul>
 					</div>
 				</div>
